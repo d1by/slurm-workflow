@@ -1,8 +1,6 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.inspection import DecisionBoundaryDisplay
 import pandas as pd
-import matplotlib.pyplot as plt
 
 df = pd.read_csv('mock_data.csv')
 
@@ -25,8 +23,4 @@ model.fit(x, y)
 # new_data = np.array([[123123, 1000]])
 # pred = model.predict(new_data)
 
-display = DecisionBoundaryDisplay(
-    xx0 = sal, xx1 = pos, response = y
-)
-
-display.plot()
+np.save('model.npy', model.coef_)
