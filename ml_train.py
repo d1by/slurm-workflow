@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('mock_data.csv')
 
@@ -20,7 +21,3 @@ y = np.array(df['targets_training'])
 model = LogisticRegression()
 model.fit(x, y)
 
-# new_data = np.array([[123123, 1000]])
-# pred = model.predict(new_data)
-
-np.save('model.npy', model.coef_)
