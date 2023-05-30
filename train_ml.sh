@@ -10,4 +10,5 @@
 #SBATCH --time=00:10:00
 
 
-python3 ml_train.py
+python3 ml_train.py     #train algo
+python3 plotter.py      #plot data
