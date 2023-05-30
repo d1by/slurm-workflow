@@ -6,4 +6,4 @@ slurm workflow management system
 - [x] Data Storage & Management
 - [x] Data Analysis
 - [x] Data Visualization
-- [ ] Data Interpretation
+- [x] Data Interpretation
