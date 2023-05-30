@@ -11,4 +11,3 @@
 
 numactl --interleave=all mongod --dbpath=database --bind_ip $(hostname -i) &
 python3 mongo.py
-#note:python script should have this line to work var = pymongo.MongoClient(host=<IP of MongoDB Server>)
