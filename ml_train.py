@@ -24,3 +24,9 @@ model.fit(x, y)
 
 # new_data = np.array([[123123, 1000]])
 # pred = model.predict(new_data)
+
+display = DecisionBoundaryDisplay(
+    xx0 = sal, xx1 = pos, response = y
+)
+
+display.plot()
