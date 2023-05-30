@@ -4,7 +4,7 @@ import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["test2"]
-f1=open("Output_CSV_File.csv","+a")
+f1=open("skills_data.csv","+a")
 # cntfile=open("cntfile.txt","+r")
 # reader1=cntfile.readline()
 # c=int(reader1)
