@@ -10,4 +10,4 @@
 #SBATCH --time=00:10:00
 
 numactl --interleave=all mongod --dbpath=database --bind_ip $(hostname -i) &
-python3 mongo.py
+python3 csvToMng.py
