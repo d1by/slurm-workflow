@@ -2,7 +2,10 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
 
-df = pd.read_csv('mock_data.csv')
+try:
+    df = pd.read_csv('skills_data.csv')
+except:
+    df = pd.read_csv('mock_data.csv')
 
 exmpl_num = df.shape[0]
 feats_num = df.shape[1]

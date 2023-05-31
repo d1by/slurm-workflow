@@ -1,6 +1,10 @@
 from ml_train import *
 
-test_df = pd.read_csv('mock_data.csv')
+try:
+    test_df = pd.read_csv('input.csv')
+except:
+    test_df = pd.read_csv('mock_data.csv')
+    
 test_num = df.shape[0]
 
 test_sal = np.array(df['salary'])
