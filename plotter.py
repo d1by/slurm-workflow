@@ -1,6 +1,5 @@
-
 from ml_train import *
-
+import matplotlib.pyplot as plt
  
 b = model.intercept_[0]
 w1, w2 = model.coef_.T
