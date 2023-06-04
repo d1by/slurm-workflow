@@ -1,7 +1,7 @@
 from ml_train import *
 
 try:
-    test_df = pd.read_csv('input.csv')
+    test_df = pd.read_csv('skills_data.csv')
 except:
     test_df = pd.read_csv('mock_data.csv')
     

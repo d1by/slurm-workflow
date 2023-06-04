@@ -8,16 +8,24 @@ mydb = myclient["test2"]
 cntfile=open("cntfile.txt","+r")
 reader1=cntfile.readline()
 
-c=int(reader1)+1
+try:
+    c=int(reader1)+1
+except:
+    c=1
 collection_name=f"testcol{c}"
 mycol = mydb[collection_name]
 cntfile.close()
 cntfile1=open("cntfile.txt","w")
 cntfile1.write(str(c))
-filename=input("Enter file name with extention")
+#filename=input("Enter file name with extention")
 # print(myclient.list_database_names())
 # print(mydb.list_collection_names())
-f=open(filename)
+#f=open(filename)
+try:
+    f=open('input.csv')
+except:
+    f=open('mock_data.csv')
+    
 header=list(f.readline().split(sep=","))
 reader=f.readlines()
 i=0
