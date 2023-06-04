@@ -36,6 +36,7 @@ for r in reader:
     dict[header[0]]=row[0]
     dict[header[1]]=row[1]
     dict[header[2]]=row[2]
+    dict[header[3]]=row[3]
     # print(dict)
     mycol.insert_one(dict)
 
