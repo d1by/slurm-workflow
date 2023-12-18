@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=testing_%j
-#SBATCH --output=testing_%j.out
-#SBATCH --error=testing_%j.err
+#SBATCH --job-name=webscarping%j
+#SBATCH --output=webscraping%j.out
+#SBATCH --error=webscraping%j.err
 #SBATCH --partition=test
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
